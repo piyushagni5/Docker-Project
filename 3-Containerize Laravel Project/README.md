@@ -8,6 +8,7 @@ A pretty simplified Docker Compose workflow that sets up a LEMP network of conta
 
 2. Once you enter inside the project go to the src folder & try to install dependency packages to make your laravel project run.
 > cd src
+
 > composer install
 
 3. Also copy .env.example file to .env file and make few changes on .env file.
@@ -17,7 +18,9 @@ A pretty simplified Docker Compose workflow that sets up a LEMP network of conta
 
 > DB_HOST=mysql   // This name comes from the MySQL service we created in the docker-compose.yml file, and is used in the Docker network to reference the service                     // from other containers.
 > DB_DATABASE=pizzahouse
+
 > DB_USERNAME=root
+
 > DB_PASSWORD=secret
 
 - Once you made these changes to .env file do not forget to save it.
@@ -27,6 +30,7 @@ A pretty simplified Docker Compose workflow that sets up a LEMP network of conta
 
 5. Now go back to the root directory of your project and try to build an image.
 > cd ..
+
 > docker-compose build && docker-compose up -d
 
 6. Now it's time to migrate your database table using docker-compose exec
