@@ -1,4 +1,5 @@
 # docker-compose-laravel
+This is a laravel based docker project in which we have tried to create a website through which a user can place their Pizza order and along with they can also register themselves to the Pizzahouse account. In this project we are using the ui package for the authentication system and also we are saving the user's data to the MySql database table.
 
 ## Steps to follow
 
