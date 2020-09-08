@@ -15,7 +15,7 @@ This is a laravel based docker project in which we have tried to create a websit
 
 - Open up your project’s .env file in the src directory and modify the following lines:
 
-- `DB_HOST=mysql`   // This name comes from the MySQL service we created in the docker-compose.yml file, and is used in the Docker network to reference the service                     // from other containers.
+- `DB_HOST=mysql`   // This name comes from the MySQL service we created in the docker-compose.yml file, and is used in the Docker network to reference the service                     from other containers.
 
 - `DB_DATABASE=pizzahouse`
 
