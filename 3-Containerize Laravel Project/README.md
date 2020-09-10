@@ -26,14 +26,13 @@ This is a laravel based docker project in which we have tried to create a websit
 
 - Once you made these changes to .env file do not forget to save it.
 
-
-4. Now go back to the root directory of your project and try to build an image.
+4. Now go back to the root directory of your project and set the APP_KEY value in your . env file using below command.
 - `cd ..`
 
-- `docker-compose build && docker-compose up -d`
-
-5. Now sets the APP_KEY value in your . env file using below command.
 - `docker-compose exec php php /var/www/html/artisan key:generate` 
+
+5. Try to build an image using docker-compose.
+- `docker-compose build && docker-compose up -d`
 
 6. Now it's time to migrate your database table using docker-compose exec
 - `docker-compose exec php php /var/www/html/artisan migrate`
