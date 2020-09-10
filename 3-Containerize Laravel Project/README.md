@@ -33,7 +33,7 @@ This is a laravel based docker project in which we have tried to create a websit
 - `docker-compose build && docker-compose up -d`
 
 5. Now sets the APP_KEY value in your . env file using below command.
-- `ocker-compose exec php php /var/www/html/artisan key:generate` 
+- `docker-compose exec php php /var/www/html/artisan key:generate` 
 
 6. Now it's time to migrate your database table using docker-compose exec
 - `docker-compose exec php php /var/www/html/artisan migrate`
