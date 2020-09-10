@@ -5,12 +5,13 @@ This is a laravel based docker project in which we have tried to create a websit
 
 1. First clone this laravel project and then change your directory to "3-Containerize Laravel Project this project".
 
-2. Once you enter inside the project go to the src folder & try to install dependency packages to make your laravel project run.
+2. Once you enter inside the project try to install the composer package to generate a vendor folder inside the laravel project.
+
+- `docker-compose run --rm composer update
+`
+3. Now change your directory to 'src' folder and also copy .env.example file to .env file and make few changes on .env file.
 - `cd src`
 
-- `composer install`
-
-3. Also copy .env.example file to .env file and make few changes on .env file.
 - `cp .env.example .env`
 
 - Open up your project’s .env file in the src directory and modify the following lines:
@@ -25,13 +26,14 @@ This is a laravel based docker project in which we have tried to create a websit
 
 - Once you made these changes to .env file do not forget to save it.
 
-4. Now sets the APP_KEY value in your . env file using below command.
-- `php artisan key:generate` 
 
-5. Now go back to the root directory of your project and try to build an image.
+4. Now go back to the root directory of your project and try to build an image.
 - `cd ..`
 
 - `docker-compose build && docker-compose up -d`
+
+5. Now sets the APP_KEY value in your . env file using below command.
+- `ocker-compose exec php php /var/www/html/artisan key:generate` 
 
 6. Now it's time to migrate your database table using docker-compose exec
 - `docker-compose exec php php /var/www/html/artisan migrate`
