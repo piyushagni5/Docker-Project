@@ -22,7 +22,11 @@
             The India's Best Pizzas
         </div>
         <p class="mssg">{{ session('mssg') }}</p>
+        <p> Feeling Hungry --> 
         <a href="{{ route('pizzas.create') }}">Order a Pizza</a>
+        </p>
     </div>
+    
+    
 </div>
 @endsection

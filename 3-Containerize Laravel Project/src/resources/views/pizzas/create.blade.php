@@ -2,15 +2,15 @@
 
 @section('content')
 <div class="wrapper create-pizza">
-  <h1>Create a New Pizza</h1>
+  <h1>Order a New Pizza</h1>
   <form action="{{ route('pizzas.store') }}" method="POST">
     @csrf
     <label for="name">Your name:</label>
     <input type="text" name="name" id="name" required>
     <label for="type">Choose type of pizza:</label>
     <select name="type" id="type">
-      <option value="margarita">Margarita</option>
       <option value="hawaiian">Hawaiian</option>
+      <option value="margarita">Margarita</option>
       <option value="veg supreme">Veg Supreme</option>
       <option value="volcano">Volcano</option>
     </select>
@@ -23,10 +23,10 @@
     </select>
     <fieldset>
       <label>Extra toppings:</label>
-      <input type="checkbox" name="toppings[]" value="mushrooms">Mushrooms<br />
-      <input type="checkbox" name="toppings[]" value="peppers">Peppers<br />
       <input type="checkbox" name="toppings[]" value="garlic">Garlic<br />
       <input type="checkbox" name="toppings[]" value="olives">Olives<br />
+      <input type="checkbox" name="toppings[]" value="mushrooms">Mushrooms<br />
+      <input type="checkbox" name="toppings[]" value="peppers">Peppers<br />
     </fieldset>
     <input type="submit" value="Order Pizza">
   </form>
