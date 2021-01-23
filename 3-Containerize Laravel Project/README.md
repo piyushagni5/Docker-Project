@@ -7,7 +7,7 @@ This is a laravel based docker project in which we have tried to create a websit
 
 2. Once you enter inside the project try to install the composer package to generate a vendor folder inside the laravel project.
 
-- `docker-compose run --rm composer install
+- `docker-compose run --rm composer update
 `
 3. Now change your directory to 'src' folder and also copy .env.example file to .env file and make few changes on .env file.
 - `cd src`
