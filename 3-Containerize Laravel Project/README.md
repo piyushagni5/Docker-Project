@@ -50,4 +50,7 @@ This is a laravel based docker project in which we have tried to create a websit
   
 - Once you logged in you can see the pizzahouse database inside it...
 
+9. Also you can down your container by:
+- `docker-compose down`
+
 *************************************************************************************************************************************************************
